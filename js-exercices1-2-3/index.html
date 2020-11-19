@@ -9,8 +9,104 @@
 <body>
 
 	<form>
-		<input type="button" value="modifier" OnClick="modif()">
-    </form>
+		<input type="button" value="modifier" onclick="modif()">
+  </form>
+
+
+<div id="parameters">
+  <table border ="1">
+    <thead>
+        <tr><td class="nomhead">Nom</td><td class="nomhead">Valeur</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="nom">background (rgb)</td>
+          <td class="range">0<input type="range" id="background" name="color" min="0" max="255" value="0" onchange="update(this)" step="5">255</td> <!-- onchange="" permet de changer la valeur de value en JS qu'on ne peut changer que de cette façon-->
+        </tr> 
+        <tr>
+          <td class="nom">padding</td>
+          <td class="range">0<input type="range" id="padding" name="padding" min="0" max="30" value="0" onchange="update(this)" step="5">30</td>
+        </tr>
+        <tr>
+          <td class="nom">height</td>
+          <td class="range">0<input type="range" id="height" name="height" min="0" max="200" value="0" onchange="update(this)" step="5">200</td>
+        </tr>
+        <tr>
+          <td class="nom">width</td>
+          <td class="range">0<input type="range" id="width" name="width" min="0" max="200" value="0" onchange="update(this)" step="5">200</td>
+        </tr>
+        <tr>
+          <td class="nom">radius</td>
+          <td class="range">0<input type="range" id="radius" name="radius" min="0" max="30" value="0" onchange="update(this)" step="5">30</td>
+        </tr>
+        <tr>
+          <td class="nom">rotation</td>
+          <td class="range">0<input type="range" id="rotation" name="rotation" min="0" max="180" value="0" onchange="update(this)" step="5">180</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <h1 id="text" class="titre">Titre de test</h1>
+</div>
+  
+
+
+<p id="p">Bienvenue à l'AFPA 2020 !</p>
+    <button onclick="changer_style()">Changer style !</button>
+
+
+
+    
+
+    <div class="chronometre">
+      <div class="time">
+          <span>0 h</span> :
+          <span>0 mn</span> :
+          <span>0 s</span> :
+          <span>0 ms</span> 
+      </div>       
+      <button id="start" onclick="start()">Start</button>
+      <button id="stop" onclick="stop()">Stop</button>
+      <button id="reset" onclick="reset()">Reset</button>
+  </div>
+
+
+
+
+
+
+  <div>
+    <p contenteditable="true" id="ch1">Bonjour</p>
+    <button onclick="str_fisrt_letter(document.getElementById('ch1').innerHTML)">Tester</button>
+    <p id="res1"></p>
+  </div>
+  <div>
+    <p contenteditable="true" id="ch2">monadress@exelib.com</p>
+    <button onclick="str_email(document.getElementById('ch2').innerHTML)">Tester</button>
+    <p id="res2"></p>
+  </div>
+  <div>
+    <p contenteditable="true" id="ch3">te1st</p>
+    <button onclick="str_number(document.getElementById('ch3').innerHTML)">Tester</button>
+    <p id="res3"></p>
+  </div>
+  <div >
+    <p contenteditable="true" id="ch4">bonjour12<p>
+    <button onclick="str_replace(document.getElementById('ch4').innerHTML)">Tester</button>
+    <p id="res4"></p>
+  </div>
+
+
+
+
+  <div>
+    <button onclick="add_name()">Ajouter un nom</button>
+    <button onclick="random()">Tirage au sort</button>
+</div>
+
+
+
 
 
 

@@ -3,8 +3,6 @@
     color: blue;
 }
 
-
-
 .blue {
     background: blue;
     color: white; 
@@ -13,14 +11,73 @@
 
 
 
-
-
-
-body{
-    background-color:#ff0000;
+/*exercice 1 cours 2B*/
+.titre{
+    font-weight: 700;
+    font-size: 24px;
 }
 
-.body-color{
-    background-color:#ffffff;
+.nomhead{
+    font-weight: 700;
+    color:black;
+    font-size: 16px;
+}
+
+.nom{
+    font-size: 14px;
+    font-weight: 400;
+    color:blueviolet;
+}
+
+.range{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.active {
+    background : red;
+    color:white;
+    border : 2px dotted black;
+    padding : 5px;
 
 }
+
+
+.chronometre {
+    margin: auto;
+    text-align: center;
+    width: 400px;
+}
+
+.time {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    border: 1.5px solid black;
+    font-size: 18px;
+}
+
+.chronometre button {
+    background:teal;
+    height:20px;
+    width:100px;
+    border:none;
+    box-shadow:3px 3px 12px #999;
+    font:bold 13px Arial;
+    color:white;
+    border-radius:20px/10px;
+    margin-top:50px;
+    margin-right:10px;
+
+}
+
+
+
+
+
+
+/* CSS Document */
+    div{
+      border: 1px solid black;
+    }
